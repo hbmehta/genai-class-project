@@ -1,4 +1,4 @@
-# ResearchDating: An AI Agent for Faculty-Student Research Matching at BSPH
+# ResearchDating: An AI Agent for Faculty-Student Research Matching at Johns Hopkins Bloomberg School of Public Health
 
 **Hemalkumar B. Mehta, MS, PhD**
 Associate Professor of Epidemiology
