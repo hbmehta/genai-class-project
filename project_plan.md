@@ -8,7 +8,7 @@ Johns Hopkins Bloomberg School of Public Health
 
 ## 1. Project Title
 
-**ResearchDating: An AI Agent for Faculty-Student Research Matching at BSPH**
+**ResearchDating: An AI Agent for Faculty-Student Research Matching at Johns Hopkins Bloomberg School of Public Health**
 
 ---
 
