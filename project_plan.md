@@ -1,4 +1,4 @@
-# ResearchDating: An AI Agent for Faculty-Student Research Matching at Johns Hopkins Bloomberg School of Public Health
+# ResearchDating: An AI Agent for Faculty-Student Research Matching at BSPH
 
 **Hemalkumar B. Mehta, MS, PhD**
 Associate Professor of Epidemiology
@@ -8,7 +8,7 @@ Johns Hopkins Bloomberg School of Public Health
 
 ## 1. Project Title
 
-**ResearchDating: An AI Agent for Faculty-Student Research Matching at Johns Hopkins Bloomberg School of Public Health**
+**ResearchDating: An AI Agent for Faculty-Student Research Matching at BSPH**
 
 ---
 
@@ -46,7 +46,13 @@ A keyword-based search of the faculty directory would miss semantic overlap betw
 ## 4. Planned System Design and Baseline
 
 **System architecture:**
-ResearchDating uses a RAG pipeline over a curated corpus of faculty profiles from two pilot departments — Biostatistics and Epidemiology. This focused scope allows for rigorous evaluation and quality control, with the intent to expand to all BSPH departments and eventually the broader Johns Hopkins University in future iterations. Before retrieval, the system runs a lightweight query clarification step — a low-cost LLM call that classifies whether the student's input is specific enough to retrieve meaningful matches. If the query falls below a specificity threshold (e.g., "I want to do global health stuff"), the system returns a single targeted follow-up question ("Could you tell me more about the population, disease area, or methods you are interested in?") before running the full RAG pipeline. This ensures that vague inputs — one of the most common failure modes — are caught early rather than producing low-quality matches downstream. Each faculty member's data — drawn from their CV (PDF), lab webpage, NIH grants, and top PubMed publications — is chunked, embedded, and stored in a vector database. When a student submits a free-text description of their research interests, the system retrieves the most semantically relevant faculty chunks, then passes them to an LLM to generate a ranked list of 3–5 faculty matches with plain-language explanations.
+ResearchDating is a RAG-powered LLM tool, not a fully agentic system. This is a deliberate design choice — for a high-stakes student-facing workflow, a reliable and deterministic pipeline is more appropriate than an autonomous agent loop. The query clarification step introduces a lightweight decision point, but the overall workflow follows a fixed sequence. Future iterations could add true agentic behavior such as live API tool calls to PubMed or NIH Reporter at runtime.
+
+The system is powered by **Claude Sonnet** (Anthropic), selected for its strong instruction-following, structured output support, large context window, and favorable cost-to-quality ratio for this use case. The query clarification step uses a lightweight, low-temperature call to minimize token usage before committing to the full retrieval pipeline.
+
+The pipeline operates over a curated corpus of faculty profiles from two pilot departments — Biostatistics and Epidemiology — with the intent to expand to all BSPH departments and eventually the broader Johns Hopkins University in future iterations. The workflow is **student-initiated**: a student visits the webpage, enters their research interests, and triggers the pipeline. There is no automatic trigger tied to admissions — the tool is available on demand throughout the first semester.
+
+Before retrieval, the system runs a lightweight query clarification step — a low-cost LLM call that classifies whether the student's input is specific enough to retrieve meaningful matches. If the query falls below a specificity threshold (e.g., "I want to do global health stuff"), the system returns a single targeted follow-up question ("Could you tell me more about the population, disease area, or methods you are interested in?") before running the full RAG pipeline. This ensures that vague inputs — one of the most common failure modes — are caught early rather than producing low-quality matches downstream. Each faculty member's data — drawn from their CV (PDF), lab webpage, NIH grants, top PubMed publications, department job postings, and where available, current and former trainee information from lab pages — is chunked, embedded, and stored in a vector database. When a student submits a free-text description of their research interests, the system retrieves the most semantically relevant faculty chunks, then passes them to an LLM to generate a ranked list of 3–5 faculty matches with plain-language explanations.
 
 **Course concepts integrated:**
 
@@ -83,7 +89,7 @@ The system successfully identifies faculty whose research genuinely aligns with 
 A set of 10–15 simulated student queries written to reflect realistic variation in how incoming master's students describe their interests — ranging from precise ("I want to study air pollution exposure and respiratory outcomes in children") to vague ("I'm interested in health and communities"). Queries will be scoped to research interests relevant to Biostatistics and Epidemiology faculty. Ground-truth relevant faculty for each query will be established by the project author as a domain expert, drawing on knowledge of the BSPH faculty. Where possible, 1–2 additional faculty validators will be consulted to reduce single-rater bias.
 
 **Baseline comparison:**
-Each test query will be run through both the ResearchDating RAG pipeline and the TF-IDF keyword baseline. Results will be compared on relevance accuracy and explanation quality. The model-as-judge will score both sets of outputs using the same rubric, and spot checks will be performed manually to validate the judge's scoring. Cosine similarity scores will be logged for all test queries to empirically calibrate the low-confidence retrieval threshold — rather than setting it arbitrarily, the threshold will be derived from the observed distribution of similarity scores for true matches versus non-matches in the test set.
+Each test query will be run through both the ResearchDating RAG pipeline and the TF-IDF keyword baseline. Results will be compared on relevance accuracy and explanation quality. The model-as-judge will score both sets of outputs using the same rubric. To assess judge reliability, concordance between the model-as-judge scores and human expert scores will be measured — specifically, percent agreement and Cohen's kappa will be calculated on a subset of queries scored by both. This validates whether the automated scoring can be trusted as a proxy for human judgment. Spot checks will be performed manually on discordant cases to identify systematic scoring errors. Cosine similarity scores will be logged for all test queries to empirically calibrate the low-confidence retrieval threshold — rather than setting it arbitrarily, the threshold will be derived from the observed distribution of similarity scores for true matches versus non-matches in the test set.
 
 ---
 
@@ -151,3 +157,15 @@ The TF-IDF keyword baseline will be implemented and run against the same 10–15
 
 **What will not yet be complete:**
 Full red-teaming and adversarial testing will likely still be in progress. The corpus may not yet include NIH grant data for all faculty. Final latency and cost measurements will be preliminary. These will be completed between Week 6 and the final submission.
+
+---
+
+## 9. Future Work
+
+Several promising directions are out of scope for this class project but worth pursuing in future iterations:
+
+- **True agentic behavior:** Adding live tool calls to PubMed and NIH Reporter APIs at runtime, allowing the system to fetch fresh faculty data on demand rather than relying on a static pre-built corpus. This would move ResearchDating from an LLM + RAG tool toward a genuine agent loop.
+- **Feedback and learning from rejections:** Capturing whether students successfully connected with recommended faculty, and using patterns of successful and unsuccessful matches to refine future recommendations over time.
+- **Student profile matching:** Allowing students to optionally upload their own CV or research statement, enabling two-sided matching — aligning not just research interests but also student background and skills with faculty expectations.
+- **Expansion to all BSPH departments and Johns Hopkins University:** Scaling the pilot beyond Epidemiology and Biostatistics to the full school, and eventually to all JHU schools and departments.
+- **Cross-encoder reranking:** Adding a two-stage retrieval pipeline with a cross-encoder reranker to improve match quality beyond what single-stage vector similarity can achieve.
