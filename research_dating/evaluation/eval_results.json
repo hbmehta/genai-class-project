@@ -1,0 +1,1050 @@
+[
+  {
+    "query_id": "q01",
+    "query_text": "I want to study the impact of air pollution on cardiovascular disease outcomes in elderly populations in urban settings.",
+    "specificity": "high",
+    "ground_truth_faculty": [
+      "zeger_scott",
+      "dickerson_aisha",
+      "baksh_sheriza",
+      "selvin_elizabeth",
+      "ehrhardt_stephan"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.8048127889633179,
+      "low_confidence": false,
+      "returned_faculty": [
+        "zeger_scott",
+        "baksh_sheriza",
+        "dickerson_aisha",
+        "selvin_elizabeth",
+        "ehrhardt_stephan"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "judge_scores": [
+        {
+          "faculty_id": "zeger_scott",
+          "faculty_name": "Scott Zeger",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Zeger's research directly addresses air pollution, cardiovascular outcomes, Medicare (elderly) populations, and urban settings\u2014a strong match. The explanation and email both cite specific, plausible work (Medicare mortality study, 20-cities study) that aligns with the faculty profile, and the email makes a clear, professional ask with concrete personalization."
+        },
+        {
+          "faculty_id": "baksh_sheriza",
+          "faculty_name": "Sheriza Baksh",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "The faculty profile excerpt provided contains no research details to verify the claims about ozone, TRACER-HF, or cardiac biomarkers, making it impossible to confirm accuracy. The explanation and email reference specific work that may be fabricated or unverifiable from the given profile, though the general cardiovascular/environmental epidemiology connection is plausible."
+        },
+        {
+          "faculty_id": "dickerson_aisha",
+          "faculty_name": "Aisha Dickerson",
+          "relevance": 2,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "The faculty match is tangential\u2014Dickerson's work focuses on air pollution and aging cohorts but centers on neurodevelopmental/dementia outcomes rather than cardiovascular disease, earning a relevance score of 2. However, the explanation is transparent about this gap while accurately grounding the match in specific methodological and population overlaps, and the email is well-crafted with specific references to her methods (quantile g-computation) and cohort (NHATS/Medicare), making a clear and professional ask."
+        },
+        {
+          "faculty_id": "selvin_elizabeth",
+          "faculty_name": "Elizabeth Selvin",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Selvin's work focuses on cardiovascular disease epidemiology through ARIC, which provides a tangential connection to the student's interests, but her primary focus is on diabetes, biomarkers, and cardiometabolic risk rather than air pollution or environmental exposures. The explanation and email both stretch the ARIC connection to environmental exposures without grounding it in specific faculty work, and the email references a 'review of social determinants' that isn't confirmed in the provided profile excerpts."
+        },
+        {
+          "faculty_id": "ehrhardt_stephan",
+          "faculty_name": "Stephan Ehrhardt",
+          "relevance": 2,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "The faculty match is tangential \u2014 Ehrhardt's air pollution work targets COPD and his cardiovascular work focuses on maternal/child health, not elderly urban populations, making this a partial rather than strong match. However, the explanation is notably honest and specific about these gaps while grounding claims in named projects (CLEAN AIR 2, ENRICH), and the email professionally cites concrete work without inventing details."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "dickerson_aisha",
+        "zeger_scott",
+        "connor_avonne",
+        "duggal_priya",
+        "wojcik_genevieve"
+      ],
+      "scores": [
+        0.21941310915860054,
+        0.1537532650743419,
+        0.09018188005491867,
+        0.08732656429609648,
+        0.08233996565535251
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "precision_at_5": 0.4
+    }
+  },
+  {
+    "query_id": "q02",
+    "query_text": "I am interested in using machine learning and electronic health records to study chronic disease progression.",
+    "specificity": "high",
+    "ground_truth_faculty": [
+      "zeger_scott",
+      "rosenblum_michael",
+      "visvanathan_kala",
+      "alexander_caleb"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.7451686859130859,
+      "low_confidence": false,
+      "returned_faculty": [
+        "zeger_scott",
+        "hassoon_ahmed",
+        "rosenblum_michael",
+        "visvanathan_kala",
+        "alexander_caleb"
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "precision_at_5": 0.8,
+      "judge_scores": [
+        {
+          "faculty_id": "zeger_scott",
+          "faculty_name": "Scott Zeger",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Zeger's work on machine learning, Bayesian hierarchical models, longitudinal data, and the JH Individualized Health Initiative directly aligns with the student's interests in ML and chronic disease progression. The explanation and email both cite specific, verifiable details from the faculty profile (hierarchical latent variable models, Rheumatology collaboration, Individualized Health Initiative) without inventing unsupported claims."
+        },
+        {
+          "faculty_id": "hassoon_ahmed",
+          "faculty_name": "Ahmed Hassoon",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Hassoon's work directly aligns with the student's interests in ML/EHR and chronic disease, and the explanation accurately cites specific projects (K08 award, cannabis registry, AI/ML epidemiology paper) grounded in the faculty profile. The email is well-personalized, referencing concrete works and making a clear, professional ask."
+        },
+        {
+          "faculty_id": "rosenblum_michael",
+          "faculty_name": "Michael Rosenblum",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Rosenblum's work touches on ML and EHRs (sepsis alert system), which partially aligns with the student's interests, but his primary focus is biostatistical methodology for clinical trials rather than chronic disease progression\u2014making this a tangential match. The explanation and email reference specific work (ML-based sepsis alert system, EHR data) that appears grounded in real faculty work, but the provided profile excerpt is too limited to fully verify accuracy, and the chronic disease/HIV connections feel somewhat stretched."
+        },
+        {
+          "faculty_id": "visvanathan_kala",
+          "faculty_name": "Kala Visvanathan",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Visvanathan's work involves EHR and multi-source data in cancer epidemiology, which is tangentially related to the student's ML/EHR interest, but her primary focus is cancer risk and prevention rather than machine learning for chronic disease progression. The explanation and email reference real details from the faculty profile (cohort of 1,400, EHR/claims data, AI tool) but the ML angle is a stretch, and the profile excerpts provided don't fully confirm all cited details, making the match partially but not strongly aligned."
+        },
+        {
+          "faculty_id": "alexander_caleb",
+          "faculty_name": "Caleb Alexander",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 3,
+          "reasoning": "The faculty profile excerpt provides minimal detail about Alexander's specific research projects, making it hard to confirm a strong direct match with EHR-based chronic disease ML research; his focus appears to be drug safety/effectiveness rather than chronic disease progression via ML, making this a tangential connection. The explanation references a real paper and makes reasonable inferences but acknowledges the limited evidence base. The email is well-crafted, cites a specific paper with concrete details, and makes a clear professional ask."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "dean_lorraine",
+        "zeger_scott",
+        "caffo_brian",
+        "rosenblum_michael",
+        "althoff_keri"
+      ],
+      "scores": [
+        0.22589196097158393,
+        0.17035380761369456,
+        0.15553030281466917,
+        0.1431863332347748,
+        0.1309352315750087
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "precision_at_5": 0.4
+    }
+  },
+  {
+    "query_id": "q03",
+    "query_text": "I want to work on health policy related to improving access to mental health services for underserved communities.",
+    "specificity": "high",
+    "ground_truth_faculty": [
+      "dean_lorraine",
+      "rosenblum_michael",
+      "jackson_john",
+      "hassoon_ahmed",
+      "connor_avonne"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.7171664237976074,
+      "low_confidence": false,
+      "returned_faculty": [
+        "dean_lorraine",
+        "rosenblum_michael",
+        "jackson_john",
+        "hassoon_ahmed",
+        "connor_avonne"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "judge_scores": [
+        {
+          "faculty_id": "dean_lorraine",
+          "faculty_name": "Lorraine Dean",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dr. Dean's work on health equity and social determinants of care access has some connection to the student's interest in mental health access for underserved communities, but her primary focus appears to be cancer screening and social epidemiology rather than mental health policy specifically. The explanation and email reference specific projects (guaranteed income consortium, PrEP Supreme Court brief) that are not confirmed in the provided CV excerpt, making the specificity potentially fabricated rather than grounded in verified faculty work."
+        },
+        {
+          "faculty_id": "rosenblum_michael",
+          "faculty_name": "Michael Rosenblum",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dr. Rosenblum is a biostatistician whose primary expertise is in adaptive trial design and causal inference methods, not health policy or mental health access \u2014 making this a tangential match at best. The explanation and email reference a specific Medicaid Health Home study that may be real but cannot be verified from the provided profile excerpt, raising concerns about invented or unverifiable details."
+        },
+        {
+          "faculty_id": "jackson_john",
+          "faculty_name": "John Jackson",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dr. Jackson's work on structural racism and racial disparities in healthcare access has tangential relevance to the student's interest in mental health access for underserved communities, but there is no direct connection to mental health services specifically. The explanation and email both reference specific-sounding work (hypothetical interventions, rural North Carolina Medicaid, severe maternal morbidity) that cannot be verified from the provided faculty profile excerpt, raising concerns about invented details rather than grounded citations."
+        },
+        {
+          "faculty_id": "hassoon_ahmed",
+          "faculty_name": "Ahmed Hassoon",
+          "relevance": 1,
+          "explanation_quality": 1,
+          "email_quality": 2,
+          "reasoning": "Dr. Hassoon's actual research focuses on AI/data science for diagnostic safety and cancer diagnostics, not community health worker navigation programs or health equity frameworks for underserved populations \u2014 the explanation appears to have fabricated or hallucinated a CHW pilot program that does not appear in his profile. The student's interest in mental health policy for underserved communities has no meaningful connection to his actual work in AI-driven clinical diagnostics."
+        },
+        {
+          "faculty_id": "connor_avonne",
+          "faculty_name": "Avonne Connor",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dr. Connor's work is on cancer health disparities in underserved populations, which shares the equity and access framework but is not directly aligned with mental health policy \u2014 making this a tangential match. Both the explanation and email acknowledge this gap honestly but remain somewhat vague, referencing general themes of health disparities rather than specific projects or papers from her profile."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "jackson_john",
+        "dean_lorraine",
+        "dickerson_aisha",
+        "saldanha_ian",
+        "rosenblum_michael"
+      ],
+      "scores": [
+        0.16469276528701574,
+        0.10513273020886965,
+        0.10441209034304896,
+        0.10370669675832674,
+        0.1030706391860992
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "precision_at_5": 0.6
+    }
+  },
+  {
+    "query_id": "q04",
+    "query_text": "I have a background in economics and want to apply causal inference methods to study the effects of social policy on health outcomes.",
+    "specificity": "high",
+    "ground_truth_faculty": [
+      "jackson_john",
+      "dean_lorraine",
+      "lau_bryan",
+      "rosenblum_michael"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.7512423992156982,
+      "low_confidence": false,
+      "returned_faculty": [
+        "jackson_john",
+        "dean_lorraine",
+        "lau_bryan",
+        "rosenblum_michael"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.8,
+      "judge_scores": [
+        {
+          "faculty_id": "jackson_john",
+          "faculty_name": "John Jackson",
+          "relevance": 3,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "The faculty profile excerpt provided contains only contact information with no research details, making it impossible to verify whether the specific claims about Jackson's work (target trial emulation, pregnancy care resources in Medicaid, ratio of mediator probability weights, etc.) are accurate or invented. The explanation and email are highly specific and plausible given the student's interests, but since the ground truth context doesn't confirm any of these details, the explanation and email cannot be scored as fully grounded\u2014they may contain fabricated specifics."
+        },
+        {
+          "faculty_id": "dean_lorraine",
+          "faculty_name": "Lorraine Dean",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "The faculty profile excerpt is limited but the explanation and email are well-grounded in specific details about Dean's work on social determinants, quantitative methods, and policy impact. The email references a concrete 2025 PrEP study with Supreme Court amicus brief citations, which is a specific and verifiable-sounding claim that directly connects to the student's interests in causal inference and social policy\u2014though the profile excerpt doesn't confirm this specific paper, the overall alignment with Dean's stated research focus on social/economic barriers and health policy is strong."
+        },
+        {
+          "faculty_id": "lau_bryan",
+          "faculty_name": "Bryan Lau",
+          "relevance": 2,
+          "explanation_quality": 3,
+          "email_quality": 2,
+          "reasoning": "The match is tangential\u2014Lau's causal inference methods overlap with the student's background, but his applied focus on HIV/COVID-19 doesn't align with the student's interest in social policy effects on health. The explanation is well-grounded in faculty-specific details (IV, propensity scores, g-methods, clinical presentations) without inventing information, but the email only references general methodological overlap without citing a specific paper or project, keeping it at a partial personalization level."
+        },
+        {
+          "faculty_id": "rosenblum_michael",
+          "faculty_name": "Michael Rosenblum",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Rosenblum's work in causal inference provides a tangential connection to the student's interests, but his focus is on clinical trials and biostatistics rather than social policy evaluation. The explanation and email reference a 'community health intervention in Baltimore' that cannot be verified from the provided profile excerpt, raising concerns about invented details, though the overall framing is plausible and partially grounded."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "jackson_john",
+        "mehta_hemal",
+        "lau_bryan",
+        "rosenblum_michael",
+        "wojcik_genevieve"
+      ],
+      "scores": [
+        0.2901710720813727,
+        0.1815855031114095,
+        0.15736943838567002,
+        0.13438235611042346,
+        0.09791565058798468
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "precision_at_5": 0.6
+    }
+  },
+  {
+    "query_id": "q05",
+    "query_text": "I'm interested in cancer epidemiology, especially studying risk factors for breast and colorectal cancer in diverse populations.",
+    "specificity": "high",
+    "ground_truth_faculty": [
+      "connor_avonne",
+      "visvanathan_kala",
+      "platz_elizabeth",
+      "chatterjee_nilanjan"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.8127768039703369,
+      "low_confidence": false,
+      "returned_faculty": [
+        "connor_avonne",
+        "visvanathan_kala",
+        "platz_elizabeth",
+        "chatterjee_nilanjan"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.8,
+      "judge_scores": [
+        {
+          "faculty_id": "connor_avonne",
+          "faculty_name": "Avonne Connor",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Dr. Connor's research on breast cancer epidemiology, modifiable risk factors, and health disparities directly aligns with the student's interests in cancer epidemiology and diverse populations. The explanation and email are specific, grounded in faculty profile details, and professionally crafted with a clear ask, though the profile excerpt provided is minimal, the details cited appear consistent with what was available."
+        },
+        {
+          "faculty_id": "visvanathan_kala",
+          "faculty_name": "Kala Visvanathan",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Dr. Visvanathan's work on breast/ovarian cancer risk, health disparities, and colorectal cancer genetics directly matches the student's interests. The explanation and email both cite specific, verifiable details from the faculty profile (CLUE cohorts, AI tool for Black community genetic testing, genome-wide gene-physical activity interaction analysis), with no invented details."
+        },
+        {
+          "faculty_id": "platz_elizabeth",
+          "faculty_name": "Elizabeth Platz",
+          "relevance": 3,
+          "explanation_quality": 2,
+          "email_quality": 3,
+          "reasoning": "Dr. Platz is a strong match for cancer epidemiology and colorectal cancer risk factors, earning high relevance. However, the explanation and email cite very specific details (GREM1/SCG5 variants, genome-wide gene-physical activity interaction analysis, BMI meta-analysis with 720,000 participants) that cannot be verified from the provided profile excerpt, raising concerns about invented details that limit the explanation quality score. The email itself is well-crafted and specific, but its quality is contingent on those unverifiable claims being accurate."
+        },
+        {
+          "faculty_id": "chatterjee_nilanjan",
+          "faculty_name": "Nilanjan Chatterjee",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Dr. Chatterjee's work on genetic and environmental risk factors for breast cancer directly aligns with the student's interests in cancer risk factors. The explanation and email both cite specific, plausible publications (JNCI paper on genetic/environmental factors, alcohol and breast cancer study) that are grounded in known aspects of Chatterjee's research portfolio, making the match feel concrete and well-justified rather than generic."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "connor_avonne",
+        "chatterjee_nilanjan",
+        "wojcik_genevieve",
+        "visvanathan_kala",
+        "platz_elizabeth"
+      ],
+      "scores": [
+        0.23483491196105807,
+        0.20425740452565183,
+        0.1494076407874144,
+        0.12885146186742458,
+        0.11344913515282189
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "precision_at_5": 0.8
+    }
+  },
+  {
+    "query_id": "q06",
+    "query_text": "I want to study infectious disease transmission dynamics, particularly COVID-19 or influenza using mathematical modeling or simulation.",
+    "specificity": "high",
+    "ground_truth_faculty": [
+      "ray_debashree",
+      "dowdy_david",
+      "lau_bryan",
+      "duggal_priya"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.7830538153648376,
+      "low_confidence": false,
+      "returned_faculty": [
+        "ray_debashree",
+        "dowdy_david",
+        "lau_bryan",
+        "duggal_priya"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.8,
+      "judge_scores": [
+        {
+          "faculty_id": "ray_debashree",
+          "faculty_name": "Debashree Ray",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Dr. Ray has explicit COVID-19 modeling work that directly matches the student's interests in infectious disease transmission dynamics and mathematical modeling. The explanation and email both cite a specific, real paper and concrete policy-relevant work, grounded in the faculty profile excerpts without inventing details."
+        },
+        {
+          "faculty_id": "dowdy_david",
+          "faculty_name": "David Dowdy",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dowdy is a strong TB modeler with some COVID-19 public engagement, but the student's focus on COVID-19/influenza modeling is only tangentially aligned with his primary TB research program. The explanation and email reference specific modeling methods accurately but cite a specific paper ('active case finding' work with 'infection clearance dynamics') that cannot be verified from the provided profile excerpt, raising concerns about invented details."
+        },
+        {
+          "faculty_id": "lau_bryan",
+          "faculty_name": "Bryan Lau",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Bryan Lau's primary focus is HIV epidemiology with some COVID-19 work, making this a tangential rather than strong match for a student interested in transmission dynamics modeling of COVID-19/influenza. The explanation and email reference COVID-19 therapeutic allocation modeling, which appears grounded in his keywords, but the faculty profile excerpt provided is too limited to verify the specific claims about 'experimental treatments under emergency use authorization,' raising concerns about partially invented details."
+        },
+        {
+          "faculty_id": "duggal_priya",
+          "faculty_name": "Priya Duggal",
+          "relevance": 2,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Duggal's work touches COVID-19 and infectious disease but her focus on host genetics/genomics is tangential to the student's interest in transmission dynamics and mathematical modeling, making this a partial match. The explanation and email are both well-crafted \u2014 they accurately acknowledge the mismatch, cite specific faculty work (the Dean's Lecture), and make a clear, professional ask without inventing details."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "dowdy_david",
+        "duggal_priya",
+        "ray_debashree",
+        "wojcik_genevieve",
+        "kirk_gregory"
+      ],
+      "scores": [
+        0.16101629740212095,
+        0.14753423604278465,
+        0.12694066178247948,
+        0.11220813647155348,
+        0.10838771820035295
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.6
+    }
+  },
+  {
+    "query_id": "q07",
+    "query_text": "I am interested in the social determinants of health, particularly how neighborhood and housing conditions affect chronic disease.",
+    "specificity": "medium",
+    "ground_truth_faculty": [
+      "dean_lorraine",
+      "selvin_elizabeth",
+      "zeger_scott",
+      "dickerson_aisha"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.7515859603881836,
+      "low_confidence": false,
+      "returned_faculty": [
+        "dean_lorraine",
+        "selvin_elizabeth",
+        "zeger_scott",
+        "dickerson_aisha"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.8,
+      "judge_scores": [
+        {
+          "faculty_id": "dean_lorraine",
+          "faculty_name": "Lorraine Dean",
+          "relevance": 3,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dr. Dean is a social epidemiologist focused on social determinants and chronic disease, making the match highly relevant. However, the explanation and email cite specific details (REGARDS cohort study, hypertension-segregation mediation findings, GIS methods, privilege gradients framing) that cannot be verified from the provided CV excerpt, raising concerns about invented details rather than grounded citations."
+        },
+        {
+          "faculty_id": "selvin_elizabeth",
+          "faculty_name": "Elizabeth Selvin",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dr. Selvin is primarily known for diabetes, cardiovascular biomarkers, and kidney disease epidemiology using ARIC, not specifically neighborhood/housing conditions as a research focus; the explanation and email overstate the neighborhood/social determinants angle and reference a 'review article' that is not confirmed in the provided profile excerpts, making the match tangential and the citations unverifiable."
+        },
+        {
+          "faculty_id": "zeger_scott",
+          "faculty_name": "Scott Zeger",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "The match is tangential at best \u2014 Zeger is a biostatistician whose primary focus is methodology, not social determinants or housing/neighborhood conditions. The explanation and email reference specific collaborative work (ED visits, diabetic retinopathy adherence) that cannot be verified from the provided profile excerpt, raising concerns about invented details, though the explanation does acknowledge the partial nature of the match."
+        },
+        {
+          "faculty_id": "dickerson_aisha",
+          "faculty_name": "Aisha Dickerson",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "The faculty profile excerpt provided is too limited to fully verify the explanation's claims, but the explanation appropriately acknowledges the indirect connection between Dr. Dickerson's environmental/neurodevelopmental focus and the student's interest in housing/chronic disease. The email is partially personalized but references only general themes rather than any specific paper or project, and the faculty profile excerpt doesn't confirm the specific research areas cited."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "selvin_elizabeth",
+        "dean_lorraine",
+        "zeger_scott",
+        "lau_bryan",
+        "connor_avonne"
+      ],
+      "scores": [
+        0.29732191530112895,
+        0.1867051977172722,
+        0.1455136947308473,
+        0.14214859971697472,
+        0.1338405178611981
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.6
+    }
+  },
+  {
+    "query_id": "q08",
+    "query_text": "I want to do something with biostatistics methods \u00e2\u20ac\u201d maybe survival analysis or Bayesian methods applied to clinical trial data.",
+    "specificity": "medium",
+    "ground_truth_faculty": [
+      "rosenblum_michael",
+      "zeger_scott",
+      "lau_bryan",
+      "baksh_sheriza"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.7752789258956909,
+      "low_confidence": false,
+      "returned_faculty": [
+        "rosenblum_michael",
+        "lau_bryan",
+        "zeger_scott",
+        "baksh_sheriza"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.8,
+      "judge_scores": [
+        {
+          "faculty_id": "rosenblum_michael",
+          "faculty_name": "Michael Rosenblum",
+          "relevance": 3,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "The faculty match is highly relevant as Rosenblum's work on clinical trial methodology directly aligns with the student's interests. However, both the explanation and email reference specific details (adaptive designs for subpopulations, open-source software, HIV prevention work) that cannot be verified from the limited profile excerpt provided, making it impossible to confirm accuracy \u2014 the explanation and email earn a 2 rather than 3 due to potential invented details beyond what the ground truth supports."
+        },
+        {
+          "faculty_id": "lau_bryan",
+          "faculty_name": "Bryan Lau",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "The faculty match is strong and directly relevant, with Lau's expertise in survival analysis, competing risks, and biostatistics aligning well with the student's interests. The explanation and email are both specific, grounded in faculty profile details, and make concrete references to his methodological work and COVID-19 clinical trial research without inventing unsupported details."
+        },
+        {
+          "faculty_id": "zeger_scott",
+          "faculty_name": "Scott Zeger",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Zeger is a strong match for the student's interest in Bayesian methods and clinical applications, and the explanation accurately cites specific methodological keywords and research directions from his profile. The email is well-personalized, referencing a concrete project (Bayesian prediction using hierarchical latent variable models and the Individualized Health Initiative) and makes a clear, professional ask."
+        },
+        {
+          "faculty_id": "baksh_sheriza",
+          "faculty_name": "Sheriza Baksh",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Baksh is an epidemiologist whose profile excerpt provides almost no detail about her specific methods or projects, making the match tangential at best\u2014her clinical trials focus has some overlap with the student's interests but no confirmed connection to survival analysis or Bayesian methods. Both the explanation and email reference 'novel clinical trial analysis plans' and 'Center for Clinical Trials and Evidence Synthesis,' which appear to be drawn from the system's knowledge rather than the provided profile excerpt, introducing unverifiable details that prevent a top score."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "rosenblum_michael",
+        "zeger_scott",
+        "selvin_elizabeth",
+        "lau_bryan",
+        "baksh_sheriza"
+      ],
+      "scores": [
+        0.17542164095230162,
+        0.16408320090387088,
+        0.12981853965610263,
+        0.12531952328285414,
+        0.10868868647294265
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "precision_at_5": 0.8
+    }
+  },
+  {
+    "query_id": "q09",
+    "query_text": "I care about maternal and child health in low- and middle-income countries, especially reducing preventable mortality.",
+    "specificity": "medium",
+    "ground_truth_faculty": [
+      "zeger_scott",
+      "ehrhardt_stephan",
+      "dowdy_david"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.6707991361618042,
+      "low_confidence": false,
+      "returned_faculty": [
+        "zeger_scott",
+        "ehrhardt_stephan",
+        "dowdy_david"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.6,
+      "judge_scores": [
+        {
+          "faculty_id": "zeger_scott",
+          "faculty_name": "Scott Zeger",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Zeger's work on MNCH in LMICs, DHS data, and multilevel methods directly matches the student's interests in maternal and child health and preventable mortality. The explanation and email both cite specific, plausible details about his research focus areas, though the faculty profile excerpt provided is minimal (just contact info), making it impossible to fully verify the specific claims\u2014however, the details cited are internally consistent and grounded rather than generic."
+        },
+        {
+          "faculty_id": "ehrhardt_stephan",
+          "faculty_name": "Stephan Ehrhardt",
+          "relevance": 3,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Ehrhardt's keywords and tropical medicine background do connect to maternal-child health in LMICs, making the match reasonably strong. However, the explanation and email reference specific details (internalizing symptoms in very low birth weight preschoolers, translational epidemiology framing) that are not substantiated by the provided profile excerpts, introducing potentially invented details and reducing confidence in their accuracy."
+        },
+        {
+          "faculty_id": "dowdy_david",
+          "faculty_name": "David Dowdy",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 3,
+          "reasoning": "Dowdy's work on TB and HIV in LMICs has some overlap with child health and preventable mortality, but his focus is infectious disease epidemiology rather than maternal and child health specifically, making this a tangential match. The explanation and email reference specific projects (nutritional support for TB in India, HIV infant diagnosis) that appear plausible but cannot be fully verified from the limited profile excerpt provided, raising some concern about accuracy of cited details."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "dowdy_david",
+        "rosenblum_michael",
+        "ehrhardt_stephan",
+        "althoff_keri",
+        "ray_debashree"
+      ],
+      "scores": [
+        0.21197431092307104,
+        0.19328824574318193,
+        0.19231833492540715,
+        0.14976182360113377,
+        0.14711161674273462
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "precision_at_5": 0.4
+    }
+  },
+  {
+    "query_id": "q10",
+    "query_text": "I'm interested in nutrition and diet-related diseases, maybe obesity or diabetes.",
+    "specificity": "medium",
+    "ground_truth_faculty": [
+      "selvin_elizabeth",
+      "platz_elizabeth",
+      "connor_avonne",
+      "duggal_priya"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.7057554125785828,
+      "low_confidence": false,
+      "returned_faculty": [
+        "selvin_elizabeth",
+        "platz_elizabeth",
+        "connor_avonne",
+        "duggal_priya"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 0.8,
+      "judge_scores": [
+        {
+          "faculty_id": "selvin_elizabeth",
+          "faculty_name": "Elizabeth Selvin",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Dr. Selvin's work on diabetes, obesity, and ultra-processed foods directly matches the student's interests, and both the explanation and email specifically cite her study on ultra-processed food consumption among adults with prediabetes/diabetes \u2014 a concrete, grounded reference that personalizes the outreach without inventing details."
+        },
+        {
+          "faculty_id": "platz_elizabeth",
+          "faculty_name": "Elizabeth Platz",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dr. Platz is primarily a cancer epidemiologist, making the match tangential to the student's interest in obesity/diabetes rather than a direct fit. The explanation and email reference specific-sounding details (ABACus 2 Consortium, Sensitive Period Analysis, 13 cancers linked to obesity) that cannot be verified from the provided faculty profile excerpt, raising concerns about invented details."
+        },
+        {
+          "faculty_id": "connor_avonne",
+          "faculty_name": "Avonne Connor",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Dr. Connor's work on obesity biomarkers, food environments, diabetes, and adiposity directly overlaps with the student's interests in nutrition and diet-related diseases. The explanation and email both cite specific, verifiable details from the faculty profile (Food Environment Index, hypertension among Black breast cancer survivors, ethnic differences in diabetes/adiposity/mortality) without inventing details."
+        },
+        {
+          "faculty_id": "duggal_priya",
+          "faculty_name": "Priya Duggal",
+          "relevance": 2,
+          "explanation_quality": 3,
+          "email_quality": 2,
+          "reasoning": "Dr. Duggal's work on malnutrition and gut microbiota has some tangential connection to nutrition and diet-related diseases, warranting a relevance score of 2. The explanation is honest and grounded, correctly noting the peripheral nature of the match without inventing details, earning a 3. The email references specific aspects of her work (genotypes, gut microbiota, enteropathogens) drawn from the explanation, but since the faculty profile excerpt provided is minimal, it's unclear if these details are fully accurate; the email lacks a concrete paper or project citation, keeping it at a 2."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "selvin_elizabeth",
+        "platz_elizabeth",
+        "ehrhardt_stephan",
+        "matsushita_kuni",
+        "wojcik_genevieve"
+      ],
+      "scores": [
+        0.14110798662116808,
+        0.11353099553233968,
+        0.07838920460653413,
+        0.07464539588379265,
+        0.07390132059883316
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "precision_at_5": 0.4
+    }
+  },
+  {
+    "query_id": "q11",
+    "query_text": "I want to do global health stuff.",
+    "specificity": "low",
+    "ground_truth_faculty": [],
+    "rag": {
+      "status": "clarification_needed",
+      "max_similarity": 0.0,
+      "low_confidence": false,
+      "returned_faculty": [],
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "clarification_correct": true,
+      "judge_scores": []
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "selvin_elizabeth",
+        "saldanha_ian",
+        "dowdy_david",
+        "platz_elizabeth",
+        "hassoon_ahmed"
+      ],
+      "scores": [
+        0.19659748464849375,
+        0.18192281923960882,
+        0.17503937441817466,
+        0.15792684429134024,
+        0.14943511966049852
+      ],
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0
+    }
+  },
+  {
+    "query_id": "q12",
+    "query_text": "I like public health research.",
+    "specificity": "low",
+    "ground_truth_faculty": [],
+    "rag": {
+      "status": "clarification_needed",
+      "max_similarity": 0.0,
+      "low_confidence": false,
+      "returned_faculty": [],
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "clarification_correct": true,
+      "judge_scores": []
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "deal_jennifer",
+        "saldanha_ian",
+        "baksh_sheriza",
+        "lau_bryan",
+        "schrack_jennifer"
+      ],
+      "scores": [
+        0.28506940073571124,
+        0.2613784032740258,
+        0.20117825622404575,
+        0.13210917190339744,
+        0.1318435321642304
+      ],
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0
+    }
+  },
+  {
+    "query_id": "q13",
+    "query_text": "I want to help people.",
+    "specificity": "low",
+    "ground_truth_faculty": [],
+    "rag": {
+      "status": "clarification_needed",
+      "max_similarity": 0.0,
+      "low_confidence": false,
+      "returned_faculty": [],
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "clarification_correct": true,
+      "judge_scores": []
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "deal_jennifer",
+        "jackson_john",
+        "rosenblum_michael",
+        "caffo_brian",
+        "dean_lorraine"
+      ],
+      "scores": [
+        0.1071759257033615,
+        0.10444550975931423,
+        0.10199545126698331,
+        0.09703463060303369,
+        0.08584103871517422
+      ],
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0
+    }
+  },
+  {
+    "query_id": "q14",
+    "query_text": "I'm not sure exactly what I want to study yet, but I'm interested in something related to aging and maybe cognition.",
+    "specificity": "low",
+    "ground_truth_faculty": [],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.6887257695198059,
+      "low_confidence": false,
+      "returned_faculty": [
+        "deal_jennifer",
+        "wanigatunga_amal",
+        "dickerson_aisha",
+        "dean_lorraine",
+        "schrack_jennifer"
+      ],
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "clarification_correct": false,
+      "judge_scores": [
+        {
+          "faculty_id": "deal_jennifer",
+          "faculty_name": "Jennifer Deal",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Dr. Deal's work on brain aging, cognitive decline, and the ACHIEVE trial directly matches the student's interest in aging and cognition. The explanation and email both accurately cite specific, verifiable details from the faculty profile (ACHIEVE trial, hearing interventions, cognitive decline) without inventing information."
+        },
+        {
+          "faculty_id": "wanigatunga_amal",
+          "faculty_name": "Amal Wanigatunga",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Dr. Wanigatunga's research on physical activity, cognitive decline, and dementia in older adults is a strong match for the student's interest in aging and cognition. The explanation and email both cite specific, grounded details (Baltimore Longitudinal Study of Aging, activity complexity as an early dementia indicator) that align with the faculty profile excerpts, with no apparent invented details."
+        },
+        {
+          "faculty_id": "dickerson_aisha",
+          "faculty_name": "Aisha Dickerson",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "The faculty match is strong given Dr. Dickerson's focus on aging, cognition, and dementia epidemiology aligns directly with the student's interests. The explanation and email both cite specific, concrete details (HRS data, everyday discrimination, dementia odds, non-Hispanic Black participants) that appear grounded in actual faculty work rather than invented, and the email makes a clear, professional ask."
+        },
+        {
+          "faculty_id": "dean_lorraine",
+          "faculty_name": "Lorraine Dean",
+          "relevance": 2,
+          "explanation_quality": 1,
+          "email_quality": 2,
+          "reasoning": "Dr. Dean's actual research focus is on cancer screening behaviors and social epidemiology/health disparities, not cognitive aging or dementia \u2014 the explanation and email appear to fabricate a research profile involving the ACTIVE cohort and financial anosognosia that has no basis in the provided faculty profile. The match is tangential at best given the student's broad interest in aging and cognition."
+        },
+        {
+          "faculty_id": "schrack_jennifer",
+          "faculty_name": "Jennifer Schrack",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "Dr. Schrack's work on aging and physical function, her role in the Alzheimer's Disease Resource Center, and her advisees' cognition-focused theses make this a strong match for a student interested in aging and cognition. The explanation accurately grounds the connection in specific student thesis topics and faculty roles, and the email concretely references a named thesis (Pei-Lun Kuo's) while making a clear, professional ask for a meeting."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "deal_jennifer",
+        "schrack_jennifer",
+        "wanigatunga_amal",
+        "caffo_brian",
+        "platz_elizabeth"
+      ],
+      "scores": [
+        0.15806400724635053,
+        0.1461625200335131,
+        0.13591233413508183,
+        0.12357733117256901,
+        0.1044176478741346
+      ],
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0
+    }
+  },
+  {
+    "query_id": "q15",
+    "query_text": "I want to study health disparities using survey data, specifically looking at racial and ethnic differences in hypertension control.",
+    "specificity": "high",
+    "ground_truth_faculty": [
+      "dean_lorraine",
+      "jackson_john",
+      "alexander_caleb",
+      "mehta_hemal",
+      "connor_avonne"
+    ],
+    "rag": {
+      "status": "success",
+      "max_similarity": 0.8022996187210083,
+      "low_confidence": false,
+      "returned_faculty": [
+        "dean_lorraine",
+        "jackson_john",
+        "alexander_caleb",
+        "mehta_hemal",
+        "connor_avonne"
+      ],
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "judge_scores": [
+        {
+          "faculty_id": "dean_lorraine",
+          "faculty_name": "Lorraine Dean",
+          "relevance": 3,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dr. Dean's research on racial health disparities and hypertension is a strong topical match for the student's interests. However, the explanation and email reference specific studies (REGARDS cohort, NIH/NHLBI R01 on structural racism and hypertension) and details that cannot be verified from the provided CV excerpt, which only confirms her ScD in Social Epidemiology with a focus on cancer screening\u2014raising concerns about invented details that lower both scores."
+        },
+        {
+          "faculty_id": "jackson_john",
+          "faculty_name": "John Jackson",
+          "relevance": 2,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "The faculty profile excerpt provided contains only contact information with no research details to verify the claims made about the Target Study framework, inverse probability weighting, or Pan-DIASPORA project. While the topic alignment on hypertension disparities seems plausible, the explanation and email cite very specific methodological details and project names that cannot be confirmed from the ground truth context, raising concerns about invented details."
+        },
+        {
+          "faculty_id": "alexander_caleb",
+          "faculty_name": "Caleb Alexander",
+          "relevance": 3,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "Dr. Alexander works in epidemiology and drug safety/effectiveness, which is broadly relevant to hypertension disparities, but the faculty profile excerpt provided contains no information about a 'Target Study' paper or hypertension disparities research, making the specific claims in the explanation and email unverifiable and potentially fabricated. The email references a specific paper and finding that cannot be confirmed from the ground truth context, reducing confidence in both explanation and email quality."
+        },
+        {
+          "faculty_id": "mehta_hemal",
+          "faculty_name": "Hemalkumar Mehta",
+          "relevance": 3,
+          "explanation_quality": 2,
+          "email_quality": 2,
+          "reasoning": "The faculty match is highly relevant as Dr. Mehta works in epidemiology with a focus on health disparities and hypertension, directly aligning with the student's interests. However, the explanation and email both reference specific study details (Target Study conceptual model, Black-White disparities in treatment intensification, inverse probability weighting) that cannot be verified from the provided faculty profile excerpt, which contains only contact information \u2014 these details may be accurate but risk being fabricated or embellished beyond what the ground truth supports."
+        },
+        {
+          "faculty_id": "connor_avonne",
+          "faculty_name": "Avonne Connor",
+          "relevance": 3,
+          "explanation_quality": 3,
+          "email_quality": 3,
+          "reasoning": "The faculty match is strong and directly relevant\u2014Dr. Connor's work on hypertension prevalence in Black women using survey data aligns well with the student's interest in racial disparities in hypertension control via survey methods. Both the explanation and email are specific, grounded in concrete details from her research (Food Environment Index finding, online survey methodology), and avoid generic or invented claims."
+        }
+      ]
+    },
+    "tfidf": {
+      "returned_faculty": [
+        "dean_lorraine",
+        "selvin_elizabeth",
+        "alexander_caleb",
+        "mehta_hemal",
+        "jackson_john"
+      ],
+      "scores": [
+        0.1618210405061377,
+        0.15776046985758688,
+        0.1369801072138846,
+        0.1369801072138846,
+        0.1369801072138846
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "precision_at_5": 0.8
+    }
+  }
+]

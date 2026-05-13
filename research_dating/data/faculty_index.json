@@ -1,0 +1,302 @@
+[
+  {
+    "id": "hassoon_ahmed",
+    "name": "Ahmed Hassoon",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3198/ahmed-hassoon",
+    "cv_file": "Ahmed Hassoon.pdf",
+    "pubmed_query": "Hassoon A[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "HASSOON, AHMED"
+  },
+  {
+    "id": "dickerson_aisha",
+    "name": "Aisha Dickerson",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3898/aisha-s-dickerson",
+    "cv_file": "Aisha Dickerson CV.pdf",
+    "pubmed_query": "Dickerson AS[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "DICKERSON, AISHA"
+  },
+  {
+    "id": "wanigatunga_amal",
+    "name": "Amal Wanigatunga",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3809/amal-asiri-wanigatunga",
+    "cv_file": "Amal Wanigatunga CV.pdf",
+    "pubmed_query": "Wanigatunga AA[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "WANIGATUNGA, AMAL"
+  },
+  {
+    "id": "connor_avonne",
+    "name": "Avonne Connor",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3095/avonne-e-connor",
+    "cv_file": "Avonne Connor CV.pdf",
+    "pubmed_query": "Connor AE[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "CONNOR, AVONNE"
+  },
+  {
+    "id": "caffo_brian",
+    "name": "Brian Caffo",
+    "department": "Biostatistics",
+    "email": "bcaffo@jhsph.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/1010/brian-s-caffo",
+    "cv_file": "Brian Caffo CV.pdf",
+    "pubmed_query": "Caffo BS[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "CAFFO, BRIAN"
+  },
+  {
+    "id": "lau_bryan",
+    "name": "Bryan Lau",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/1592/bryan-lau",
+    "cv_file": "Bryan Lau CV.pdf",
+    "pubmed_query": "Lau B[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "LAU, BRYAN"
+  },
+  {
+    "id": "alexander_caleb",
+    "name": "Caleb Alexander",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/2761/caleb-alexander",
+    "cv_file": "Caleb Alexander CV.pdf",
+    "pubmed_query": "Alexander GC[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "ALEXANDER, CALEB"
+  },
+  {
+    "id": "dowdy_david",
+    "name": "David Dowdy",
+    "department": "Epidemiology",
+    "email": "ddowdy@jhu.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/2529/david-w-dowdy",
+    "cv_file": "David Dowdy CV.pdf",
+    "pubmed_query": "Dowdy DW[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "DOWDY, DAVID"
+  },
+  {
+    "id": "ray_debashree",
+    "name": "Debashree Ray",
+    "department": "Biostatistics",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3556/debashree-ray",
+    "cv_file": "Debashree Ray CV.pdf",
+    "pubmed_query": "Ray D[Author] AND Johns Hopkins[Affiliation] AND (biostatistics OR genetics OR genomics)",
+    "nih_pi_name": "RAY, DEBASHREE"
+  },
+  {
+    "id": "ng_derek",
+    "name": "Derek Ng",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3113/derek-k-ng",
+    "cv_file": "Derek Ng CV.pdf",
+    "pubmed_query": "Ng DK[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "NG, DEREK"
+  },
+  {
+    "id": "platz_elizabeth",
+    "name": "Elizabeth Platz",
+    "department": "Epidemiology",
+    "email": "eplatz@jhsph.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/554/elizabeth-a-platz",
+    "cv_file": "Elizabeth Platz CV.pdf",
+    "pubmed_query": "Platz EA[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "PLATZ, ELIZABETH"
+  },
+  {
+    "id": "selvin_elizabeth",
+    "name": "Elizabeth Selvin",
+    "department": "Epidemiology",
+    "email": "eselvin@jhsph.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/1882/elizabeth-selvin",
+    "cv_file": "Elizabeth Selvin CV.pdf",
+    "pubmed_query": "Selvin E[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "SELVIN, ELIZABETH"
+  },
+  {
+    "id": "kirk_gregory",
+    "name": "Gregory Kirk",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/1507/gregory-d-kirk",
+    "cv_file": "Gregory Kirk CV.pdf",
+    "pubmed_query": "Kirk GD[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "KIRK, GREGORY"
+  },
+  {
+    "id": "mehta_hemal",
+    "name": "Hemalkumar Mehta",
+    "department": "Epidemiology",
+    "email": "hbmehta@jhu.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3941/hemalkumar-b-mehta",
+    "cv_file": "Hemalkumar Mehta CV.pdf",
+    "pubmed_query": "Mehta HB[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "MEHTA, HEMALKUMAR"
+  },
+  {
+    "id": "saldanha_ian",
+    "name": "Ian Saldanha",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3237/ian-j-saldanha",
+    "cv_file": "Ian Saldanha CV.pdf",
+    "pubmed_query": "Saldanha IJ[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "SALDANHA, IAN"
+  },
+  {
+    "id": "wojcik_genevieve",
+    "name": "Genevieve Wojcik",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3926/genevieve-wojcik",
+    "cv_file": "Genevieve Wojcik CV.pdf",
+    "pubmed_query": "Wojcik GL[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "WOJCIK, GENEVIEVE"
+  },
+  {
+    "id": "deal_jennifer",
+    "name": "Jennifer Deal",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/2864/jennifer-anne-deal",
+    "cv_file": "Jennifer Deal CV.pdf",
+    "pubmed_query": "Deal JA[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "DEAL, JENNIFER"
+  },
+  {
+    "id": "schrack_jennifer",
+    "name": "Jennifer Schrack",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/2686/jennifer-a-schrack",
+    "cv_file": "Jennifer Schrack CV.pdf",
+    "pubmed_query": "Schrack JA[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "SCHRACK, JENNIFER"
+  },
+  {
+    "id": "jackson_john",
+    "name": "John Jackson",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3410/john-w-jackson",
+    "cv_file": "John Jackson CV.pdf",
+    "pubmed_query": "Jackson JW[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "JACKSON, JOHN"
+  },
+  {
+    "id": "jones_miranda",
+    "name": "Miranda Jones",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3273/miranda-r-jones",
+    "cv_file": "Jones Miranda CV.pdf",
+    "pubmed_query": "Jones MR[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "JONES, MIRANDA"
+  },
+  {
+    "id": "visvanathan_kala",
+    "name": "Kala Visvanathan",
+    "department": "Epidemiology",
+    "email": "kvalas@jhsph.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/1129/kala-visvanathan",
+    "cv_file": "Kala Visvanathan CV.pdf",
+    "pubmed_query": "Visvanathan K[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "VISVANATHAN, KALA"
+  },
+  {
+    "id": "althoff_keri",
+    "name": "Keri Althoff",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/2177/keri-n-althoff",
+    "cv_file": "Keri Althoff CV.pdf",
+    "pubmed_query": "Althoff KN[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "ALTHOFF, KERI"
+  },
+  {
+    "id": "matsushita_kuni",
+    "name": "Kunihiro Matsushita",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/2473/kunihiro-matsushita",
+    "cv_file": "Kuni Matsushita CV.pdf",
+    "pubmed_query": "Matsushita K[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "MATSUSHITA, KUNIHIRO"
+  },
+  {
+    "id": "dean_lorraine",
+    "name": "Lorraine Dean",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/3220/lorraine-t-dean",
+    "cv_file": "Lorraine Dean CV.pdf",
+    "pubmed_query": "Dean LT[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "DEAN, LORRAINE"
+  },
+  {
+    "id": "rosenblum_michael",
+    "name": "Michael Rosenblum",
+    "department": "Biostatistics",
+    "email": "mrosenbl@jhsph.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/2241/michael-a-rosenblum",
+    "cv_file": "Michael Rosenblum CV.pdf",
+    "pubmed_query": "Rosenblum MA[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "ROSENBLUM, MICHAEL"
+  },
+  {
+    "id": "chatterjee_nilanjan",
+    "name": "Nilanjan Chatterjee",
+    "department": "Biostatistics",
+    "email": "nchatte2@jhu.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/1826/nilanjan-chatterjee",
+    "cv_file": "Nilanjan Chatterjee CV.pdf",
+    "pubmed_query": "Chatterjee N[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "CHATTERJEE, NILANJAN"
+  },
+  {
+    "id": "duggal_priya",
+    "name": "Priya Duggal",
+    "department": "Epidemiology",
+    "email": "pduggal@jhsph.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/2134/priya-duggal",
+    "cv_file": "Priya Duggal CV.pdf",
+    "pubmed_query": "Duggal P[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "DUGGAL, PRIYA"
+  },
+  {
+    "id": "zeger_scott",
+    "name": "Scott Zeger",
+    "department": "Biostatistics",
+    "email": "szeger@jhsph.edu",
+    "lab_url": "https://publichealth.jhu.edu/faculty/784/scott-l-zeger",
+    "cv_file": "Scot Zeger CV.pdf",
+    "pubmed_query": "Zeger SL[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "ZEGER, SCOTT"
+  },
+  {
+    "id": "baksh_sheriza",
+    "name": "Sheriza Baksh",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/4157/sheriza-baksh",
+    "cv_file": "Sheriza Baksh CV.pdf",
+    "pubmed_query": "Baksh SN[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "BAKSH, SHERIZA"
+  },
+  {
+    "id": "ehrhardt_stephan",
+    "name": "Stephan Ehrhardt",
+    "department": "Epidemiology",
+    "email": "",
+    "lab_url": "https://publichealth.jhu.edu/faculty/2694/stephan-ehrhardt",
+    "cv_file": "Stephen Ehrhardt CV.pdf",
+    "pubmed_query": "Ehrhardt S[Author] AND Johns Hopkins[Affiliation]",
+    "nih_pi_name": "EHRHARDT, STEPHAN"
+  }
+]

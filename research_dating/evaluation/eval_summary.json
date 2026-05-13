@@ -1,0 +1,14 @@
+{
+  "rag": {
+    "mean_precision_at_3": 0.8888888888888888,
+    "mean_precision_at_5": 0.7666666666666667,
+    "mean_relevance_judge": 2.480769230769231,
+    "mean_explanation_judge": 2.4038461538461537,
+    "mean_email_judge": 2.4615384615384617,
+    "clarification_rate": 0.75
+  },
+  "tfidf": {
+    "mean_precision_at_3": 0.5111111111111111,
+    "mean_precision_at_5": 0.4266666666666667
+  }
+}
