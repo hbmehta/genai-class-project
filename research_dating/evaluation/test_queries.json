@@ -1,0 +1,111 @@
+[
+  {
+    "query_id": "q01",
+    "query_text": "I want to study the impact of air pollution on cardiovascular disease outcomes in elderly populations in urban settings.",
+    "specificity": "high",
+    "ground_truth_faculty": ["zeger_scott", "dickerson_aisha", "baksh_sheriza", "selvin_elizabeth", "ehrhardt_stephan"],
+    "notes": "Clear topic (air pollution + CVD), population (elderly), setting (urban)."
+  },
+  {
+    "query_id": "q02",
+    "query_text": "I am interested in using machine learning and electronic health records to study chronic disease progression.",
+    "specificity": "high",
+    "ground_truth_faculty": ["zeger_scott", "rosenblum_michael", "visvanathan_kala", "alexander_caleb"],
+    "notes": "Methods-focused: tests whether system matches on ML/EHR methods rather than just topic."
+  },
+  {
+    "query_id": "q03",
+    "query_text": "I want to work on health policy related to improving access to mental health services for underserved communities.",
+    "specificity": "high",
+    "ground_truth_faculty": ["dean_lorraine", "rosenblum_michael", "jackson_john", "hassoon_ahmed", "connor_avonne"],
+    "notes": "Policy + health equity + specific disease area (mental health)."
+  },
+  {
+    "query_id": "q04",
+    "query_text": "I have a background in economics and want to apply causal inference methods to study the effects of social policy on health outcomes.",
+    "specificity": "high",
+    "ground_truth_faculty": ["jackson_john", "dean_lorraine", "lau_bryan", "rosenblum_michael"],
+    "notes": "Interdisciplinary: health economics + epidemiology methods. Tests cross-departmental matching."
+  },
+  {
+    "query_id": "q05",
+    "query_text": "I'm interested in cancer epidemiology, especially studying risk factors for breast and colorectal cancer in diverse populations.",
+    "specificity": "high",
+    "ground_truth_faculty": ["connor_avonne", "visvanathan_kala", "platz_elizabeth", "chatterjee_nilanjan"],
+    "notes": "Specific cancer types + diverse populations. Tests matching on disease-specific epidemiology."
+  },
+  {
+    "query_id": "q06",
+    "query_text": "I want to study infectious disease transmission dynamics, particularly COVID-19 or influenza using mathematical modeling or simulation.",
+    "specificity": "high",
+    "ground_truth_faculty": ["ray_debashree", "dowdy_david", "lau_bryan", "duggal_priya"],
+    "notes": "Topic clear; methods are general (modeling/simulation); population not specified."
+  },
+  {
+    "query_id": "q07",
+    "query_text": "I am interested in the social determinants of health, particularly how neighborhood and housing conditions affect chronic disease.",
+    "specificity": "medium",
+    "ground_truth_faculty": ["dean_lorraine", "selvin_elizabeth", "zeger_scott", "dickerson_aisha"],
+    "notes": "Topic somewhat clear (SDOH + housing + chronic disease); no methods or specific population."
+  },
+  {
+    "query_id": "q08",
+    "query_text": "I want to do something with biostatistics methods — maybe survival analysis or Bayesian methods applied to clinical trial data.",
+    "specificity": "medium",
+    "ground_truth_faculty": ["rosenblum_michael", "zeger_scott", "lau_bryan", "baksh_sheriza"],
+    "notes": "Methods-focused but topic is vague. Tests whether Biostatistics faculty with those methods surface."
+  },
+  {
+    "query_id": "q09",
+    "query_text": "I care about maternal and child health in low- and middle-income countries, especially reducing preventable mortality.",
+    "specificity": "medium",
+    "ground_truth_faculty": ["zeger_scott", "ehrhardt_stephan", "dowdy_david"],
+    "notes": "Topic specific (MCH + LMIC + mortality) but no methods specified."
+  },
+  {
+    "query_id": "q10",
+    "query_text": "I'm interested in nutrition and diet-related diseases, maybe obesity or diabetes.",
+    "specificity": "medium",
+    "ground_truth_faculty": ["selvin_elizabeth", "platz_elizabeth", "connor_avonne", "duggal_priya"],
+    "notes": "Partial specificity: disease area named but population, methods, and setting all missing."
+  },
+  {
+    "query_id": "q11",
+    "query_text": "I want to do global health stuff.",
+    "specificity": "low",
+    "ground_truth_faculty": [],
+    "expected_behavior": "clarification_needed",
+    "notes": "Classic vague query. Should trigger clarification step."
+  },
+  {
+    "query_id": "q12",
+    "query_text": "I like public health research.",
+    "specificity": "low",
+    "ground_truth_faculty": [],
+    "expected_behavior": "clarification_needed",
+    "notes": "Maximally vague. Should trigger clarification."
+  },
+  {
+    "query_id": "q13",
+    "query_text": "I want to help people.",
+    "specificity": "low",
+    "ground_truth_faculty": [],
+    "expected_behavior": "clarification_needed",
+    "notes": "Not a research query at all. Should trigger clarification."
+  },
+  {
+    "query_id": "q14",
+    "query_text": "I'm not sure exactly what I want to study yet, but I'm interested in something related to aging and maybe cognition.",
+    "specificity": "low",
+    "ground_truth_faculty": [],
+    "expected_behavior": "clarification_needed",
+    "notes": "Borderline: topic partially named (aging + cognition) but explicitly uncertain. Should trigger clarification."
+  },
+  {
+    "query_id": "q15",
+    "query_text": "I want to study health disparities using survey data, specifically looking at racial and ethnic differences in hypertension control.",
+    "specificity": "high",
+    "ground_truth_faculty": ["dean_lorraine", "jackson_john", "alexander_caleb", "mehta_hemal", "connor_avonne"],
+    "notes": "Specific: health disparities + survey methods + race/ethnicity + hypertension. Excellent test case."
+  }
+]
