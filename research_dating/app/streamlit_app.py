@@ -194,7 +194,7 @@ def main():
 
         st.markdown("---")
         st.markdown(
-            "**Learn more** — [GitHub repository](https://github.com/hbmehta/research-dating)"
+            "**Learn more** — [GitHub repository](https://github.com/hbmehta/genai-class-project)"
         )
         st.markdown(
             "<small>Hopkins MBA GenAI course project · BU.330.760 · Spring 2026</small>",
