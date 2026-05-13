@@ -17,8 +17,37 @@ from dotenv import load_dotenv
 
 from app.components.faculty_card import render_faculty_card
 from pipeline.rag_pipeline import run_pipeline
+from vectordb.chroma_store import get_chroma_client, get_or_create_collection, collection_stats, upsert_chunks
+from vectordb.embed import embed_texts
 
 load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env", override=True)
+
+
+@st.cache_resource(show_spinner=False)
+def _ensure_index_built():
+    """Build ChromaDB index from all_chunks.json if not already present."""
+    import json
+    chunks_path = Path(__file__).resolve().parent.parent / "data" / "processed" / "all_chunks.json"
+    if not chunks_path.exists():
+        return False, "all_chunks.json not found."
+
+    client = get_chroma_client()
+    collection = get_or_create_collection(client)
+    stats = collection_stats(collection)
+
+    if stats["total_chunks"] > 0:
+        return True, f"Index ready ({stats['total_chunks']} chunks)."
+
+    # Build index
+    chunks = json.loads(chunks_path.read_text())
+    texts = [c["text"] for c in chunks]
+    batch_size = 128
+    embeddings = []
+    for i in range(0, len(texts), batch_size):
+        batch_embeddings = embed_texts(texts[i:i + batch_size], input_type="document")
+        embeddings.extend(batch_embeddings)
+    upsert_chunks(collection, chunks, embeddings)
+    return True, f"Index built ({len(chunks)} chunks)."
 
 _DISCLAIMER = (
     "Results are based on publicly available faculty CVs, publications, and grant abstracts. "
@@ -130,6 +159,13 @@ def main():
 
     st.markdown(_CSS, unsafe_allow_html=True)
     _init_session_state()
+
+    # Build index on first run if needed (Streamlit Cloud cold start)
+    with st.spinner("Loading faculty index… (first launch may take a few minutes)"):
+        ok, msg = _ensure_index_built()
+    if not ok:
+        st.error(f"Index error: {msg}")
+        st.stop()
 
     # ── Sidebar ──────────────────────────────────────────────────────────────
     with st.sidebar:
